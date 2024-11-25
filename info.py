@@ -13,33 +13,33 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '20901045'))
-API_HASH = environ.get('API_HASH', 'dec03cafafbd892b285499762a896082')
+API_ID = int(environ.get('API_ID', '27662412'))
+API_HASH = environ.get('API_HASH', '4a695060ecd737dffa9e92c540b46ed2')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6324457826').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/Mrkillersss")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002228337057'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6847319298').split()]
+USERNAME = environ.get('USERNAME', "https://telegram.me/mrboy638")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002170835362'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/xyzmovie_hub')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002208437940').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vzdkz:cmo941iJf72S3MUP@cluster0.2vib8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002370744720').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vehyxu:w8A0vAsS1qMGfZbD@cluster0.xm4zx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002227794424'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002176735817'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/cbs.jpg')
 START_IMG = environ.get('START_IMG', 'https://envs.sh/AAf.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002257386991'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002235582796'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002308573369'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002463365481'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAENF2tnLwqqb8o650C0J-hljl-lZ-k8UAAC0BEAAhVNEVJj7hxVGDmWxzYE').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
-IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002227794424'))
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_too_penlink")
+IS_VERIFY = is_enabled('IS_VERIFY', True)
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002349501310'))
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/xmovieshub56/8")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "e27949c396504dca50e6caed52b70917f00593c9")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'linkpays.in')
+SHORTENER_API = environ.get("SHORTENER_API", "a62dcaf45b03427a18bd346b466bc56efab83a9b")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'shortxlinks.com')
 SHORTENER_API2 = environ.get("SHORTENER_API2", "3f59866fff2e9dda7fe21ad1439705357cd13030")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'gplinks.com')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "beede0b297fcecb40ca4b963c37e599140ce8923")
@@ -53,20 +53,20 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1002199891363')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002452396602')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002428130059'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002292402556')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002474926564'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002147724172')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002408181598'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002205583414'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002410598235'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002302232332'))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
-IMDB = is_enabled('IMDB', True)
+IMDB = is_enabled('IMDB', False)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
 LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
